@@ -22,23 +22,68 @@
       <img src="./images/logo.svg" class="logo-image">
     </div>
     
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
+    <section class="calculator-container">
 
-    Number of People
+      <section class="calculator-menu">
 
-    Tip Amount
-    / person
+        <span class="input-label">
+          Bill
+        </span>
 
-    Total
-    / person
+        <input id="bill-price-input">
 
-    Reset
+        <span class="input-label">
+          Select Tip %
+        </span>
+
+        <div class="tip-amount-container">
+
+        </div>
+        
+        <span class="input-label">
+          Number of People
+        </span>
+        <input type="text" class="menu-input" id="bill-people-amount">
+
+      </section>
+
+      <section class="calculator-display">
+
+        <div class="tip-amount-container">
+
+          <div class="tip-amount-details">
+            <span class="details-top">Tip Amount</span>
+            <span class="details-bottom">/ person</span>
+          </div>
+
+          <div class="tip-amount-display">
+            <span class="display-value">$4.27</span>
+          </div>
+
+        </div>
+
+        <div class="tip-total-container">
+
+          <div class="tip-amount-details">
+            <span class="details-top">Total</span>
+            <span class="details-bottom">/ person</span>
+          </div>
+
+          <div class="tip-amount-display">
+            <span class="display-value">$32.79</span>
+          </div>
+
+        </div>
+
+        <button class="reset-btn">
+          RESET
+        </button>
+
+      </section>
+
+
+    </section>
+    
     
   </main>
   

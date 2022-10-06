@@ -33,7 +33,16 @@ main{
     object-fit: contain;
 }
 
+.logo-container{
+    max-width: 4rem;
+}
 
+.calculator-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-
-
+.calculator-menu{
+    display: flex;
+    flex-direction: column;
+}
