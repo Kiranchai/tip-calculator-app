@@ -5,6 +5,8 @@ const percentageButtons = document.querySelectorAll('.tip-percentage-btn');
 const tipAmountDisplay = document.getElementById('amount-value');
 const totalDisplay = document.getElementById('total-value');
 const resetBtn = document.querySelector('.reset-btn');
+const errorPopup = document.getElementById('error-popup');
+
 let selectedBtn;
 
 
@@ -13,7 +15,7 @@ function emptyRequiredFields(){
         return true;
     }else if (selectedBtn === undefined){
         return true;
-    } else if (peopleAmount.value.length === 0){
+    } else if (peopleAmount.value.length === 0 || peopleAmount.value === '0'){
         return true;
     } else{
         return false;
@@ -70,7 +72,17 @@ billPrice.addEventListener('focusout', e => {
 })
 
 peopleAmount.addEventListener('focusout', e => {
-    calculateTips();
+    
+    if (peopleAmount.value === '0'){
+        errorPopup.style.display='block';
+        peopleAmount.classList.add('error');
+    }else{
+        if (peopleAmount.classList.contains('error')){
+            errorPopup.style.display='none';
+            peopleAmount.classList.remove('error');
+        }
+        calculateTips();
+    }
 })
 
 resetBtn.addEventListener('click', e => {
@@ -80,7 +92,8 @@ resetBtn.addEventListener('click', e => {
         selectedBtn.classList.remove('selected');
         selectedBtn = undefined;
     }
-    
+    errorPopup.style.display = 'none';
+    peopleAmount.classList.remove('error');
     peopleAmount.value = '';
     calculateTips();
 })

@@ -226,6 +226,20 @@ main{
     color: var(--strong-cyan);
 }
 
+.people-count-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+#error-popup{
+    color: red;
+    display: none;
+}
+
+.error{
+    border: 1px solid red;
+}
+
 
 @media only screen and (max-width: 550px) {
     .calculator-container{
