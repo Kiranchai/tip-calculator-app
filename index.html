@@ -19,7 +19,7 @@
   <main>
 
     <div class="logo-container">
-      <img src="./images/logo.svg" class="logo-image">
+      <img src="./images/logo.svg" class="logo-image" alt="logo image">
     </div>
     
     <section class="calculator-container">
@@ -31,7 +31,11 @@
             Bill
           </span>
   
-          <input id="bill-price-input" class="menu-input">
+          <div class="input-wrapper">
+            <img src="./images/icon-dollar.svg" alt="dolar icon" class="input-icon">
+            <input type="number" id="bill-price-input" class="menu-input">
+          </div>
+          
         </div>
         
 
@@ -55,7 +59,12 @@
           <span class="input-label">
             Number of People
           </span>
-          <input type="text" class="menu-input" id="bill-people-amount">
+
+          <div class="input-wrapper">
+            <img src="./images/icon-person.svg" alt="person icon" class="input-icon">
+            <input type="number" class="menu-input" id="bill-people-amount" > 
+          </div>
+          
         </div>
        
 
@@ -63,31 +72,37 @@
 
       <section class="calculator-display">
 
-        <div class="tip-amount-container">
+        <div class="display-top">
 
-          <div class="tip-amount-details">
-            <span class="details-top">Tip Amount</span>
-            <span class="details-bottom">/ person</span>
+          <div class="tip-amount-container">
+
+            <div class="tip-amount-details">
+              <span class="details-top">Tip Amount</span>
+              <span class="details-bottom">/ person</span>
+            </div>
+  
+            <div class="tip-amount-display">
+              <span class="display-value">$0.00</span>
+            </div>
+  
           </div>
-
-          <div class="tip-amount-display">
-            <span class="display-value">$4.27</span>
+  
+          <div class="tip-amount-container">
+  
+            <div class="tip-amount-details">
+              <span class="details-top">Total</span>
+              <span class="details-bottom">/ person</span>
+            </div>
+  
+            <div class="tip-amount-display">
+              <span class="display-value">$0.00</span>
+            </div>
+  
           </div>
 
         </div>
 
-        <div class="tip-amount-container">
-
-          <div class="tip-amount-details">
-            <span class="details-top">Total</span>
-            <span class="details-bottom">/ person</span>
-          </div>
-
-          <div class="tip-amount-display">
-            <span class="display-value">$32.79</span>
-          </div>
-
-        </div>
+        
 
         <button class="reset-btn">
           RESET
