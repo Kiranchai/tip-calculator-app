@@ -35,14 +35,65 @@ main{
 
 .logo-container{
     max-width: 4rem;
+    margin-bottom: 3rem;
 }
 
 .calculator-container{
+    max-width: 40rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 1rem;
 }
 
 .calculator-menu{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
+
+.menu-input{
+    min-width: 0;
+}
+
+.menu-sector{
+    display: flex;
+    flex-direction: column;
+}
+
+.different-percentage-input{
+    min-width: 0;
+}
+
+.tip-selection-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+}
+
+.calculator-display{
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.tip-amount-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-amount-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-percentage-btn{
+    font-size: 24px;
+}
+
+
+
+

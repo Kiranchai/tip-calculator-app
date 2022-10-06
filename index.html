@@ -26,29 +26,38 @@
 
       <section class="calculator-menu">
 
-        <span class="input-label">
-          Bill
-        </span>
-
-        <input id="bill-price-input">
-
-        <span class="input-label">
-          Select Tip %
-        </span>
-
-        <div class="tip-amount-container">
-          <button class="tip-percentage-btn">5%</button>
-          <button class="tip-percentage-btn">10%</button>
-          <button class="tip-percentage-btn">15%</button>
-          <button class="tip-percentage-btn">25%</button>
-          <button class="tip-percentage-btn">50%</button>
-          <input class="different-percentage-input" placeholder="Custom">
+        <div class="menu-sector">
+          <span class="input-label">
+            Bill
+          </span>
+  
+          <input id="bill-price-input" class="menu-input">
         </div>
         
-        <span class="input-label">
-          Number of People
-        </span>
-        <input type="text" class="menu-input" id="bill-people-amount">
+
+        <div class="menu-sector">
+          <span class="input-label">
+            Select Tip %
+          </span>
+  
+          <div class="tip-selection-container">
+            <button class="tip-percentage-btn">5%</button>
+            <button class="tip-percentage-btn">10%</button>
+            <button class="tip-percentage-btn">15%</button>
+            <button class="tip-percentage-btn">25%</button>
+            <button class="tip-percentage-btn">50%</button>
+            <input class="different-percentage-input" placeholder="Custom">
+          </div>
+        </div>
+        
+        
+        <div class="menu-sector">
+          <span class="input-label">
+            Number of People
+          </span>
+          <input type="text" class="menu-input" id="bill-people-amount">
+        </div>
+       
 
       </section>
 
@@ -67,7 +76,7 @@
 
         </div>
 
-        <div class="tip-total-container">
+        <div class="tip-amount-container">
 
           <div class="tip-amount-details">
             <span class="details-top">Total</span>
