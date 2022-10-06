@@ -25,7 +25,7 @@ input::-webkit-inner-spin-button {
 }
 
 main{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +104,10 @@ main{
     color: var(--very-dark-cyan);
 }
 
+.different-percentage-input.selected{
+    border: 1px solid var(--strong-cyan);
+}
+
 .different-percentage-input::placeholder{
     text-align: center;
 }
@@ -155,6 +159,11 @@ main{
     border:none;
     border-radius: .25rem;
     transition: all .2s ease-in-out;
+}
+
+.tip-percentage-btn.selected{
+    background-color: var(--light-grayish-cyan);
+    color: var(--dark-grayish-cyan);
 }
 
 .tip-percentage-btn:hover{
@@ -216,3 +225,20 @@ main{
     font-size: 2rem;
     color: var(--strong-cyan);
 }
+
+
+@media only screen and (max-width: 550px) {
+    .calculator-container{
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .logo-container{
+        margin-top: 3rem;
+    }
+
+    .tip-selection-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+  }
