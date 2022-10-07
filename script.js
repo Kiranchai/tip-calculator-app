@@ -59,7 +59,7 @@ customTipPercentage.addEventListener('focus', e => {
     calculateTips();
 })
 
-customTipPercentage.addEventListener('focusout', e => {
+customTipPercentage.addEventListener('input', e => {
     if (customTipPercentage.value.length === 0){
         selectedBtn.classList.remove('selected');
         selectedBtn = undefined;
@@ -67,11 +67,11 @@ customTipPercentage.addEventListener('focusout', e => {
     calculateTips();
 })
 
-billPrice.addEventListener('focusout', e => {
+billPrice.addEventListener('input', e => {
     calculateTips();
 })
 
-peopleAmount.addEventListener('focusout', e => {
+peopleAmount.addEventListener('input', e => {
     
     if (peopleAmount.value === '0'){
         errorPopup.style.display='block';
